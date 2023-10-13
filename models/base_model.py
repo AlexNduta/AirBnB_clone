@@ -3,8 +3,8 @@
 #from .storage import Storage
 from uuid import uuid4
 from datetime import datetime
+# import models
 
-    #storage = Storage()
 
 class BaseModel:
     """
@@ -39,7 +39,7 @@ class BaseModel:
         """ Returns the string representation of the class instances """
         #class_name = self.__class__.__name__
         return ("[{}] ({}) {}".format(self.__class__.__name__, self.id, self.__dict__))
-
+      
 
     def save(self):
         """updates 'updated_at' with the current datetime when called"""
@@ -56,6 +56,7 @@ class BaseModel:
         #dict_repr["__class__"] = type(self).__module__ + '.' + type(self).__name__
         dict_repr["created_at"] = self.created_at.isoformat()
         dict_repr["updated_at"] = self.updated_at.isoformat()
+
         return dict_repr
 
 class MyModel(BaseModel):
