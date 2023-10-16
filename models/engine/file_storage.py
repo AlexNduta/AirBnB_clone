@@ -29,6 +29,8 @@ class FileStorage:
         obj_dict = {}
         for key, obj in FileStorage.__objects.items():
             obj_dict[key] = obj.to_dict()
+            obj_dict[key]["__class__"] = obj.__class__.name__
+
 
         with open(FileStorage.__file_path, "w") as f:
             json.dump(obj_dict, f)
