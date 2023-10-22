@@ -1,0 +1,10 @@
+header{
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    background-image: url(../images/logo.png); /* import the image*/
+    background-repeat: no-repeat; /*make the image to not repeat itself */
+    background-position: 20px 50%;
+
+}
