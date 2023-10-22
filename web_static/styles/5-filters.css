@@ -1,0 +1,32 @@
+.container.filters.locations{
+height: 100%;
+width: 25%;
+border-right: 1px #DDDDDD;
+}
+
+.container.filters.locations h3{
+    font-weight: 600;
+}
+
+.container.flters.locations h4{
+    font-weight: 400;
+    font-size: 14px;   
+}
+
+
+.container.filters.amenities{
+
+    height: 100%;
+    width: 25%;
+    border-right: 1px #DDDDDD;
+    }
+    
+    
+.container.filters.locations h3{
+        font-weight: 600;
+    }
+    
+.container.flters.locations h4{
+        font-weight: 400;
+        font-size: 14px;   
+}
